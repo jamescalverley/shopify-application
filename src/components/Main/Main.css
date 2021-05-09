@@ -1,5 +1,6 @@
 .main {
   max-width: 1200px;
+  min-height: 95vh;
   height: 100%;
   padding: 2rem;
   display: flex;
@@ -10,11 +11,14 @@
 .search-container {
   min-width: 50%;
   max-width: 60%;
-  height: 100px;
+  min-height: 100px;
+  height: fit-content;
   border: 2px solid black;
+  padding: 1rem;
 }
 .nominations-container {
   min-width: 400px;
-  height: 100px;
+  min-height: 100px;
+  height: fit-content;
   border: 2px solid black;
 }

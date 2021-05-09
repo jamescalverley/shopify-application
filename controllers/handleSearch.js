@@ -4,7 +4,8 @@ require('dotenv').config();
 const movieSearch = async (req,res) => {
   try {
     console.log("Incoming request", req.url);
-    const searchTerm = "the revenant"
+    console.log(req.params)
+    const searchTerm = req.params.searchterm;
     const apiKey = process.env.API_KEY;
     const apiURL = `http://www.omdbapi.com/?apikey=${apiKey}&s=${searchTerm}&type=movie`;
     const apiResult = await fetch( apiURL )

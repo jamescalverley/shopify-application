@@ -1,0 +1,10 @@
+.movie-result {
+  border: 1px solid black;
+  width: 100%;
+  height: fit-content;
+}
+.movie-result img {
+  width: 100px;
+  height: 140px;
+  object-fit: cover;
+}
