@@ -32,6 +32,7 @@ function Search(props) {
             year={m.Year} 
             image={m.Poster} 
             key={uuidv4()}
+            nominees={props.nominees}
             nominateMovie={props.nominateMovie}
           />
         )}
