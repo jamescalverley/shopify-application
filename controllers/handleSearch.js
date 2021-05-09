@@ -11,11 +11,11 @@ const movieSearch = async (req,res) => {
     const apiResult = await fetch( apiURL )
       .then( res => res.json() )
       .catch( err => console.log(err) )
-
-    console.log("Results: ", apiResult.totalResults )
+    const movieData = apiResult.Search.filter( m => m.Poster !== "N/A");
+    console.log("MovieData", movieData.length)
     res.status(200).json({
       success: true, 
-      data: apiResult
+      data: movieData
     })
   } catch (err ){
     return res.status(500).json({

@@ -14,8 +14,8 @@ function Search(props) {
   const searchMovie = async ( movie ) => {
     console.log("calling API");
     const result = await axios.get(`/api/search/${movie}`);
-    const movieList = result.data.data.Search;
-    console.log("Movies -- ", result.data.data.Search );
+    const movieList = result.data.data;
+    console.log("Movies -- ", movieList );
     setMovies( movieList )
   }; 
 
