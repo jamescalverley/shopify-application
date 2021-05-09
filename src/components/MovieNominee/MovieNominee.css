@@ -1,4 +1,37 @@
 .movie-nominee {
-  border: 1px solid blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0.5rem;
+  border-radius: 1rem;
+  padding: 1rem 1.4rem;
+  background: #F68057;
+}
+.movie-nominee__info {
+  text-align: left;  
+}
+.movie-nominee__info h3 {
+  margin: 0;
+}
+.movie-nominee__info h4 {
+  margin: 0;
+  margin-top: 0.2rem;
+  font-weight: 300;
+}
+
+.movie-nominee button {
+  padding: 0.1rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  border: none;
+  background-color: #FFF;
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+}
+.movie-nominee button:hover {
+  cursor: pointer;
+  color: #F68057;
+  
 }

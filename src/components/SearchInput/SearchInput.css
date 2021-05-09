@@ -1,0 +1,33 @@
+form {
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  width: 70%;
+  height: 2rem;
+  border: none;
+  background: inherit;
+  border-bottom: 2px solid black;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  padding-left: 0.4rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  padding: 0.6rem 1.6rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  background-color: #F68058;
+  border-radius: 1rem;
+}
+button:hover {
+  cursor: pointer;
+  color: #fff;
+  scale: 1.05;
+}

@@ -1,10 +1,43 @@
 .movie-result {
-  border: 1px solid black;
-  width: 100%;
+  max-width: 600px;
   height: fit-content;
+  background: #EAEEF1;
+  border-radius: 1rem;
+  padding: 1.4rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.movie-result img {
+.movie-header {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+.movie-header img {
   width: 100px;
   height: 140px;
   object-fit: cover;
+}
+.movie-info {
+  margin-left: 2rem;
+}
+.movie-nominate {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+.movie-nominate button {
+  padding: 0.8rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  background-color: #EECFE1;
+  border-radius: 1rem;
+}
+.movie-nominate button:hover {
+  cursor: pointer;
+  color: #fff;
+  scale: 1.05;
 }

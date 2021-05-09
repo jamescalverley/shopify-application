@@ -22,7 +22,7 @@ function Search(props) {
   return (
     <div className="search">
       <div className="search-form">
-        Search Movies
+        <h1>Search Movies</h1>
         <SearchInput searchMovie={searchMovie}/>
       </div>
       <div className="search-results">

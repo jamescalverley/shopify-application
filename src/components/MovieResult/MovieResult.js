@@ -15,14 +15,25 @@ function MovieResult(props) {
   
   return (
     <div className="movie-result">
-      <h4>{props.movie.Title}</h4>
-      <h5>{props.movie.Year}</h5>
-      <img src={poster} alt="movie-poster" />
-      { props.nominees.length < 5 && btnDisplay ?
-        <button onClick={handleNominee}>Nominate</button>
-        :
-        <></>
-      }
+      <div className="movie-header">
+        <img src={poster} alt="movie-poster" />
+        <div className="movie-info">
+          <h2>{props.movie.Title}</h2>
+          <h3>{props.movie.Year}</h3>
+        </div>
+        
+      </div>
+      
+      <div className="movie-nominate">
+      
+        { props.nominees.length < 5 && btnDisplay ?
+          <button onClick={handleNominee}>Nominate</button>
+          :
+          <></>
+        }
+      </div>
+      
+     
     </div>
   );
 }

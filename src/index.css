@@ -10,9 +10,15 @@ body {
   height: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
+  background: rgb(225,235,224);
+  background: radial-gradient(circle, rgba(225,235,224,1) 0%, rgba(158,225,192,1) 51%, rgba(153,204,226,1) 79%);
 }
 .app {
   width: 100vw;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Rubik', sans-serif; 
 }
 
 code {

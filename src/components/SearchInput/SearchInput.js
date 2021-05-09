@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './SearchInput.css';
 
 function SearchInput(props) {
 
