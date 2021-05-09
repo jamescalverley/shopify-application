@@ -28,6 +28,7 @@ function Search(props) {
       <div className="search-results">
         { movies.map( m => 
           <MovieResult 
+            movie={m}
             title={m.Title} 
             year={m.Year} 
             image={m.Poster} 
