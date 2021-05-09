@@ -1,9 +1,20 @@
-const movieSearch = (req,res) => {
+const fetch = require('node-fetch');
+require('dotenv').config(); 
+
+const movieSearch = async (req,res) => {
   try {
-    console.log("Incoming request", req.url)
+    console.log("Incoming request", req.url);
+    const searchTerm = "the revenant"
+    const apiKey = process.env.API_KEY;
+    const apiURL = `http://www.omdbapi.com/?apikey=${apiKey}&s=${searchTerm}&type=movie`;
+    const apiResult = await fetch( apiURL )
+      .then( res => res.json() )
+      .catch( err => console.log(err) )
+
+    console.log("Results: ", apiResult.totalResults )
     res.status(200).json({
       success: true, 
-      data: { test: "This is a test" }
+      data: apiResult
     })
   } catch (err ){
     return res.status(500).json({
