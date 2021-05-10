@@ -3,11 +3,10 @@ import './NomBanner.css';
 
 function NomBanner(props) {
 
-  const nomNum = 5 - props.nominees.length;
-  
   return (
     <div className="nom-banner">
-      <h3>{nomNum} {nomNum === 1 ? "nomination available" : "nominations available"}</h3>
+      <h3>Maximum number of nominations reached!</h3>
+      <h4>Thank you for your submissions.</h4>
     </div>
   );
 } 

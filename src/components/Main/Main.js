@@ -24,7 +24,9 @@ function Main() {
   
   return (
     <>
-      <NomBanner nominees={nominees} />
+      { nominees.length === 5 &&
+        <NomBanner />
+      }    
       <div className="main">
         <div className="search-container">
           <Search nominateMovie={nominateMovie} nominees={nominees} />

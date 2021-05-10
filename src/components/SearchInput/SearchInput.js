@@ -21,7 +21,7 @@ function SearchInput(props) {
   
   return (
     <form onSubmit={handleSearch}>
-      <input id="searchInput" type="text" onChange={handleInput}></input>
+      <input id="searchInput" type="text" placeholder="movie title" onChange={handleInput}></input>
       <button onClick={handleSearch}>Search</button>
     </form>
   );

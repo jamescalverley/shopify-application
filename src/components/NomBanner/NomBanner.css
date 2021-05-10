@@ -1,8 +1,18 @@
 .nom-banner {
-  background-color: aqua;
-  width: 100%;
+  background-color: #F8AF03;
+  width: 100vw;
   min-height: 20px;
   height: fit-content;
   text-align: center;
   padding: 0.2rem;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.nom-banner h3 {
+  margin-bottom: 0;
+}
+.nom-banner h4 {
+  margin-top: 0.5rem;
 }

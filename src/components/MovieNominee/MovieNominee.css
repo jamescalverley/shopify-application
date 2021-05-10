@@ -1,11 +1,13 @@
 .movie-nominee {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0.5rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
   border-radius: 1rem;
   padding: 1rem 1.4rem;
   background: #F68057;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .movie-nominee__info {
   text-align: left;  
@@ -18,7 +20,9 @@
   margin-top: 0.2rem;
   font-weight: 300;
 }
-
+.button-container {
+  padding: 0 0.6rem 0 2rem;
+}
 .movie-nominee button {
   padding: 0.1rem;
   font-family: 'Rubik', sans-serif;
@@ -33,5 +37,10 @@
 .movie-nominee button:hover {
   cursor: pointer;
   color: #F68057;
-  
+}
+
+@media (max-width: 1000px ){
+  .movie-nominee {
+    width: fit-content;
+  }
 }

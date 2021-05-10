@@ -21,19 +21,18 @@ function MovieResult(props) {
           <h2>{props.movie.Title}</h2>
           <h3>{props.movie.Year}</h3>
         </div>
-        
       </div>
-      
       <div className="movie-nominate">
-      
-        { props.nominees.length < 5 && btnDisplay ?
-          <button onClick={handleNominee}>Nominate</button>
-          :
-          <></>
+        { props.nominees.length < 5 &&
+          <div>
+            { btnDisplay ?
+              <div className="unchecked button" onClick={handleNominee}>Nominate</div>
+              :
+              <div className="checked button">Nominated</div>
+          }
+          </div>
         }
       </div>
-      
-     
     </div>
   );
 }

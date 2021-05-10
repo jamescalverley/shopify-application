@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
   return (
     <div className="footer">
-      footer
+      James Calverley - 2021
     </div>
   );
 }

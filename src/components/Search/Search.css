@@ -7,3 +7,14 @@
 .search-results {
   padding-top: 2rem;
 }
+
+@media (max-width: 768px){
+  .search-results {
+    padding: 2rem 3rem;
+  }
+}
+@media (max-width: 578px){
+  .search-results {
+    padding: 2rem 0;
+  }
+}
