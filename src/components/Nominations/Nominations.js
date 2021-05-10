@@ -12,7 +12,7 @@ function Nominations(props) {
       <h1>Nominations</h1>
       
       { props.nominees.length === 0 ?
-        <h4>Vote on your favourite movies!</h4>
+        <h4>Vote for your favourite movies!</h4>
         :
         <h4><span>{nomNum}</span> remaining</h4>
       }
